@@ -1,0 +1,12 @@
+trend_following:
+  enabled: true
+  timeframe: M15
+  ema_period: 21
+  donchian_period: 20
+  min_adx: 22.0
+  atr_stop_mult: 2.0
+  pullback_lookback: 5
+  pullback_ema_proximity_atr: 0.5
+  trailing_atr_mult: 2.0
+  break_even_at_r: 1.0
+  valid_minutes: 60

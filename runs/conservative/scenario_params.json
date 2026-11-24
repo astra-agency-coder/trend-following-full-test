@@ -1,0 +1,10 @@
+{
+ "scenario": "conservative",
+ "spread_price": 0.4,
+ "slippage_fixed_points": 4.0,
+ "commission_per_lot_side": 9.0,
+ "spread_points": 40.0,
+ "commission_mode": "PER_LOT_PER_SIDE (round-trip = 2 sides)",
+ "swap": "disabled (paper_execution.yaml)",
+ "note": "synthetic sensitivity band, not historical spread"
+}

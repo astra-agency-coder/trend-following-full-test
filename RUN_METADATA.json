@@ -1,0 +1,72 @@
+{
+ "test_id": "TREND_FOLLOWING_FULL_TEST",
+ "executed_at_utc": "2026-11-24T23:12:48.889346+00:00",
+ "scope": "Trend Following school ONLY — no hybrid router selection across schools, no other schools, one school's engine alone took every decision (brief section 5)",
+ "strategy": {
+  "id": "trend_following",
+  "version": "1.0.0",
+  "code_backup": "code_backup/ (pre-test snapshot)",
+  "config_yaml": "trend_following:\n  enabled: true\n  timeframe: M15\n  ema_period: 21\n  donchian_period: 20\n  min_adx: 22.0\n  atr_stop_mult: 2.0\n  pullback_lookback: 5\n  pullback_ema_proximity_atr: 0.5\n  trailing_atr_mult: 2.0\n  break_even_at_r: 1.0\n  valid_minutes: 60\n"
+ },
+ "config_policy": "production defaults FROZEN — no parameter optimization; walk-forward measures stability of the frozen config only",
+ "data_source": {
+  "name": "HistData.com — Generic ASCII 1-minute bar quotes (Bid), XAUUSD",
+  "period_utc": {
+   "first": "2020-01-01 23:00:00+00:00",
+   "last": "2026-11-13 21:58:00+00:00"
+  },
+  "valid_m1_rows": 2389789,
+  "coverage_pct": 96.64,
+  "normalized_m1_sha256": "aba38be916502a1b1312681602b231269a815571a5ed44ff51de21971a9ee86c",
+  "m15_sha256": "fccd495a6c5f51f844c4fc2f426c3e8a25252b5b4c90bb97cb23d917139d77fd",
+  "manifest": "/home/z/my-project/work/platform/data/historical/xauusd/manifests/DATA_MANIFEST.json",
+  "quality_report": "/home/z/my-project/work/platform/data/historical/xauusd/quality_reports/quality_metrics.json"
+ },
+ "backtest_engine": "HybridRuntime (app/bootstrap.py) via VirtualClock + HistoricalProvider — the REAL production runtime; decisions only on M15 closes; entries fill at decision close + adverse slippage",
+ "intrabar_rule": "conservative synthetic ticks [O,L,H,L,C] — SL side always checked before TP side; SL gap fills at first available price",
+ "no_lookahead": "provider serves bars strictly with close_time <= virtual now; strategy consumes closed bars only (closed_bars as_of)",
+ "risk_settings": {
+  "initial_balance": 10000.0,
+  "risk_per_trade_pct": 0.5,
+  "max_concurrent_positions": 3,
+  "max_open_positions_per_strategy": 1,
+  "max_same_direction_positions": 2,
+  "daily_loss_limit_pct": 2.0,
+  "max_spread_points": 80
+ },
+ "cost_scenarios": {
+  "base": {
+   "spread_usd": 0.25,
+   "slippage_points": 2.0,
+   "commission_per_lot_side": 7.0
+  },
+  "conservative": {
+   "spread_usd": 0.4,
+   "slippage_points": 4.0,
+   "commission_per_lot_side": 9.0
+  },
+  "high": {
+   "spread_usd": 0.6,
+   "slippage_points": 8.0,
+   "commission_per_lot_side": 12.0
+  },
+  "note": "synthetic sensitivity band around the documented research assumption — HistData source is Bid-only so the historical true spread is unknowable from this data; commission marked INCOMPLETE (experimental default)"
+ },
+ "swap": "disabled (paper_execution.yaml swap_enabled=false)",
+ "run_summary_base": {
+  "decisions": 159247,
+  "closed_trades": 2523,
+  "final_balance": 964.86,
+  "final_equity": 964.86,
+  "elapsed_seconds": 1224.1
+ },
+ "key_results": {
+  "total_net_profit": -9035.19,
+  "profit_factor": 0.5712,
+  "win_rate_pct": 29.49,
+  "max_drawdown_usd": -9148.57,
+  "relative_drawdown_pct": -90.46,
+  "trades": 2523
+ },
+ "success_criterion": "correct executed test with trustworthy results — positive or negative (brief section 16); profit was NOT the success bar"
+}

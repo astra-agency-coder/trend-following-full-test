@@ -1,0 +1,33 @@
+{
+ "label": "trend_following_base",
+ "strategies": [
+  "trend_following"
+ ],
+ "start_utc": "2020-01-01T00:00:00+00:00",
+ "end_utc": "2026-11-13T23:59:00+00:00",
+ "effective_start_utc": "2019-12-22T00:00:00+00:00",
+ "decisions": 159247,
+ "closed_trades": 2523,
+ "final_balance": 964.86,
+ "final_equity": 964.86,
+ "initial_balance": 0.0,
+ "stats": {
+  "cycles": 159247,
+  "evaluations": 159247,
+  "candidates": 10168,
+  "selections": 10075,
+  "trades_opened": 2523,
+  "rejections": 7645,
+  "shadow_registered": 93,
+  "data_gap_cycles": 0
+ },
+ "elapsed_seconds": 1224.1,
+ "spread_price_assumption": 0.25,
+ "db_path": "/home/z/my-project/work/platform/results/TREND_FOLLOWING_FULL_TEST/runs/base/research.db",
+ "scenario": "base",
+ "cost_scenario": {
+  "spread_price": 0.25,
+  "slippage_fixed_points": 2.0,
+  "commission_per_lot_side": 7.0
+ }
+}

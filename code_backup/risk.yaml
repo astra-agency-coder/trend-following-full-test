@@ -1,0 +1,14 @@
+risk:
+  initial_balance: 10000.0
+  currency: USD
+  risk_per_trade_pct: 0.50
+  max_total_open_risk_pct: 1.50
+  max_concurrent_positions: 3
+  max_open_positions_per_strategy: 1
+  max_same_direction_positions: 2
+  daily_loss_limit_pct: 2.00
+  daily_loss_limit_enabled: true
+  max_spread_points: 80
+  martingale_enabled: false
+  grid_enabled: false
+  averaging_down_enabled: false
