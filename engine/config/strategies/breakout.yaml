@@ -1,0 +1,14 @@
+breakout:
+  enabled: true
+  timeframe: M15
+  compression_window: 12
+  compression_max_range_atr: 3.0
+  donchian_period: 20
+  retest_proximity_atr: 0.3
+  max_extension_atr: 2.5
+  max_spread_points: 60
+  sl_buffer_atr: 0.3
+  rr_target: 2.0
+  min_rr: 1.5
+  break_even_at_r: 1.0
+  valid_minutes: 45

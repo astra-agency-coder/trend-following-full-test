@@ -38,6 +38,8 @@
 | `trade_reports/` | تقرير Markdown لكل صفقة من الـ2,523 |
 | `code_backup/` | نسخة كود المدرسة + المحرك التنفيذي + إعدادات YAML المجمدة وقت الاختبار |
 | `data_quality/` | جودة بيانات HistData والتغطية والفجوات |
+| `engine/` | **الكود المصدري الكامل للمشروع** (محرك gold_hybrid_engine: app/ scripts/ config/ tests/ docs/ deploy/) — المصدر الذي شغّل الاختبار |
+| `research/` | (فرع `research/expansion-followup`) تجارب المتابعة: إعادة إنتاج الأساس + فلاتر التوسع/الارتداد/التوقيت + تركيباتها |
 
 ## English summary
 

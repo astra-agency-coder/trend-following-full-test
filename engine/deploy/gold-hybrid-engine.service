@@ -1,0 +1,32 @@
+[Unit]
+Description=GOLD HYBRID ENGINE — XAUUSD paper trading backend
+Documentation=file:///opt/gold-hybrid-engine/docs/DEPLOYMENT_VPS.md
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=goldengine
+Group=goldengine
+WorkingDirectory=/opt/gold-hybrid-engine
+EnvironmentFile=/opt/gold-hybrid-engine/.env
+ExecStart=/opt/gold-hybrid-engine/.venv/bin/python -m app.main --poll-seconds 5
+ExecStop=/bin/kill -TERM $MAINPID
+TimeoutStopSec=60
+Restart=always
+RestartSec=15
+StartLimitIntervalSec=300
+StartLimitBurst=5
+
+# hardening
+NoNewPrivileges=true
+ProtectSystem=full
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/opt/gold-hybrid-engine/logs /opt/gold-hybrid-engine/data /opt/gold-hybrid-engine/exports
+
+StandardOutput=append:/opt/gold-hybrid-engine/logs/systemd.out
+StandardError=append:/opt/gold-hybrid-engine/logs/systemd.err
+
+[Install]
+WantedBy=multi-user.target

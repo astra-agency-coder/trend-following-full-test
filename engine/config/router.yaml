@@ -1,0 +1,18 @@
+hybrid_router:
+  enabled: true
+  one_selected_strategy_per_entry: true
+  require_all_strategies_agreement: false
+  allow_candidate_without_regime_perfection: true
+  no_trade_only_if_no_eligible_candidate_or_hard_block: true
+  enable_hysteresis: true
+  enable_shadow_tracking: true
+  scoring_mode: deterministic_rule_based
+  # ranking weights (deterministic, tunable — NOT win probabilities)
+  weight_setup_integrity: 0.30
+  weight_market_fit: 0.25
+  weight_timing: 0.15
+  weight_execution: 0.15
+  weight_risk_plan: 0.15
+  min_candidate_score: 0.0
+  anti_churn_score_margin: 0.0
+  min_preference_duration_minutes: 0

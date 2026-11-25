@@ -1,0 +1,7 @@
+app:
+  name: GOLD_HYBRID_ENGINE
+  environment: paper
+  canonical_symbol: XAUUSD
+  timezone_storage: UTC
+  paper_only: true
+  enable_ai: false

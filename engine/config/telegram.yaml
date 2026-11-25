@@ -1,0 +1,31 @@
+telegram:
+  enabled: false            # set TELEGRAM_ENABLED=true + TELEGRAM_BOT_TOKEN to activate
+  language: ar
+  allowed_user_ids: []      # TELEGRAM_ALLOWED_USER_IDS comma separated
+  allowed_chat_ids: []      # TELEGRAM_ALLOWED_CHAT_IDS comma separated
+  rate_limit_per_minute: 20
+  send_trade_open_alerts: true
+  send_trade_close_alerts: true
+  send_daily_report: true
+  send_weekly_report: true
+  send_every_no_trade_cycle: false
+
+database:
+  url: sqlite:///gold_hybrid.db   # production: postgresql+psycopg2://...
+
+logging:
+  audit_append_only: true
+  export_formats: [csv, json]
+  retain_trade_history: forever
+  retain_operational_logs_days: 90
+
+reporting:
+  daily_enabled: true
+  weekly_enabled: true
+  weekly_day: monday
+  weekly_timezone: UTC
+  min_sample_for_segments: 20
+
+backtesting:
+  random_seed: 42
+  step_seconds: 60

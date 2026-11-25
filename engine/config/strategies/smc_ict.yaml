@@ -1,0 +1,18 @@
+smc_ict:
+  enabled: true
+  timeframe: M15
+  pivot_left: 2
+  pivot_right: 2
+  equal_level_tolerance_points: 25
+  sweep_window_bars: 3
+  sweep_close_bars: 1
+  sweep_min_overshoot_atr: 0.05
+  sweep_zone_atr: 0.15
+  displacement_body_atr: 1.2
+  displacement_range_atr: 1.5
+  fvg_min_atr: 0.25
+  sl_buffer_atr: 0.2
+  rr_target: 2.0
+  min_rr: 1.5
+  break_even_at_r: 1.0
+  valid_minutes: 90

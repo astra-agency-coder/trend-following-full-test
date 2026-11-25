@@ -1,0 +1,10 @@
+market_data:
+  provider: mt5          # mt5 | replay
+  source_symbol: XAUUSD  # broker-specific; override via SOURCE_SYMBOL env
+  symbol_candidates: [XAUUSD, XAUUSDm, XAUUSD.a, GOLD, XAUUSD.x]
+  timeframes: [M1, M5, M15, M30, H1, H4]
+  use_closed_candles_by_default: true
+  max_data_age_seconds: 10
+  collect_ticks: true
+  import_history_on_start: false
+  history_lookback_bars: 400

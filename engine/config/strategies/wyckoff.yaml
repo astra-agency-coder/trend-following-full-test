@@ -1,0 +1,17 @@
+wyckoff:
+  enabled: true
+  timeframe: M15
+  pivot_left: 3
+  pivot_right: 3
+  range_max_bars: 120
+  range_min_bars: 20
+  range_min_width_atr: 4.0
+  range_min_touches: 4
+  spring_window_bars: 4
+  spring_min_overshoot_atr: 0.1
+  sos_hold_bars: 3
+  sl_buffer_atr: 0.25
+  tp_inset_atr: 0.3
+  rr_target: 2.0
+  min_rr: 1.5
+  valid_minutes: 90

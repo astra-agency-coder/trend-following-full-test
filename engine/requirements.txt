@@ -1,0 +1,16 @@
+# NOTE: 2.1 pre-releases flush rows in an order that breaks FK constraints
+# (verified 2026-11); pin to the stable 2.0 series.
+SQLAlchemy>=2.0,<2.1
+fastapi>=0.115
+uvicorn>=0.30
+alembic>=1.13
+psycopg2-binary>=2.9 ; platform_system == "Linux"
+PyYAML>=6.0
+requests>=2.31
+pydantic>=2.6
+pytest>=8.0
+
+# MetaTrader5 only installs on Windows — install it there with:
+#   pip install MetaTrader5
+# On Linux VPS the engine runs with a different provider (replay/import)
+# or connects to a Windows MT5 gateway.

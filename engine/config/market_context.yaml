@@ -1,0 +1,14 @@
+market_context:
+  enabled: true
+  calculate_trend: true
+  calculate_volatility: true
+  calculate_activity: true
+  calculate_liquidity_proxy: true
+  calculate_structure: true
+  calculate_sessions: true
+  news_provider: null      # no calendar provider -> UNAVAILABLE
+  base_timeframe: M5
+  trend_timeframe: M15
+  higher_timeframe: H1
+  trend_adx_threshold: 22.0
+  trend_er_threshold: 0.30

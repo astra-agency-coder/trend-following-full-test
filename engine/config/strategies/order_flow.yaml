@@ -1,0 +1,5 @@
+order_flow:
+  enabled: false
+  disable_reason: DATA_SOURCE_NOT_CONFIGURED
+  # Enable only after wiring a real OrderFlowDataProvider (e.g. COMEX GC
+  # futures depth). Spot XAUUSD broker tick volume cannot measure delta.

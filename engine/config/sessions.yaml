@@ -1,0 +1,22 @@
+sessions:
+  asia:
+    timezone: Asia/Tokyo
+    local_start: "09:00"
+    local_end: "15:00"
+    weekdays: [MON, TUE, WED, THU, FRI]
+  london:
+    timezone: Europe/London
+    local_start: "08:00"
+    local_end: "17:00"
+    weekdays: [MON, TUE, WED, THU, FRI]
+  new_york:
+    timezone: America/New_York
+    local_start: "08:00"
+    local_end: "17:00"
+    weekdays: [MON, TUE, WED, THU, FRI]
+
+session_phases:
+  opening_window_minutes: 30
+  early_until_fraction: 0.33
+  late_from_fraction: 0.66
+  closing_window_minutes: 30
