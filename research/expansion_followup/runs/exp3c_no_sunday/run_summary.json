@@ -1,0 +1,49 @@
+{
+ "label": "tf_ef_exp3c_no_sunday",
+ "strategies": [
+  "trend_following"
+ ],
+ "start_utc": "2020-01-01T00:00:00+00:00",
+ "end_utc": "2026-11-13T23:59:00+00:00",
+ "effective_start_utc": "2019-12-22T00:00:00+00:00",
+ "decisions": 159247,
+ "closed_trades": 2504,
+ "final_balance": 967.68,
+ "final_equity": 967.68,
+ "initial_balance": 0.0,
+ "stats": {
+  "cycles": 159247,
+  "evaluations": 159247,
+  "candidates": 10050,
+  "selections": 9958,
+  "trades_opened": 2504,
+  "rejections": 7546,
+  "shadow_registered": 92,
+  "data_gap_cycles": 0
+ },
+ "elapsed_seconds": 1193.6,
+ "spread_price_assumption": 0.25,
+ "db_path": "/home/z/my-project/work/github_tf_test/research/expansion_followup/runs/exp3c_no_sunday/research.db",
+ "gate": {
+  "name": "no_sunday",
+  "blocked_evaluations": 2002,
+  "allowed_evaluations": 157245,
+  "params": {
+   "utc_weekdays_allowed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "utc_hours_allowed": "all"
+  }
+ },
+ "cost_scenario": {
+  "spread_price": 0.25,
+  "slippage_fixed_points": 2.0,
+  "commission_per_lot_side": 7.0
+ },
+ "variant_id": "exp3c_no_sunday"
+}

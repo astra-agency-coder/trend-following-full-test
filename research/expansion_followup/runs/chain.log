@@ -1,0 +1,24 @@
+chain START 09:07:48
+=== baseline_repro START 09:07:48
+=== baseline_repro END rc=0 09:28:39
+=== exp1_expansion_only START 09:28:39
+=== exp1_expansion_only END rc=0 09:47:43
+=== exp2_pullback_only START 09:47:43
+=== exp2_pullback_only END rc=0 10:07:49
+=== exp3a_sunday_only START 10:07:49
+=== exp3a_sunday_only START 11:00:35
+=== exp3a_sunday_only END rc=0 11:16:01
+=== exp3b_h23_only START 11:16:01
+=== exp3b_h23_only END rc=0 11:31:21
+=== exp3c_no_sunday START 11:31:21
+=== exp3c_no_sunday START 14:32:26
+=== exp3c_no_sunday END rc=0 14:52:51
+=== exp3d_no_h23 START 14:52:51
+=== exp3d_no_h23 END rc=0 15:13:37
+=== exp3e_sunday_h23 START 15:13:37
+=== exp3e_sunday_h23 END rc=0 15:28:47
+=== exp4a_exp_pullback START 15:28:47
+=== exp4a_exp_pullback END rc=0 15:47:53
+=== exp4b_exp_pb_timing START 15:47:53
+=== exp4b_exp_pb_timing END rc=0 16:03:25
+RESUME DONE 16:03:25

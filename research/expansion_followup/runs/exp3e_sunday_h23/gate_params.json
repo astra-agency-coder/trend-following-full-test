@@ -1,0 +1,22 @@
+{
+ "variant_id": "exp3e_sunday_h23",
+ "gate": {
+  "utc_weekdays_allowed": [
+   6
+  ],
+  "utc_hours_allowed": [
+   23
+  ]
+ },
+ "gate_codes": [
+  "RESEARCH_TIMING_GATE"
+ ],
+ "blocked_evaluations": 158013,
+ "allowed_evaluations": 1234,
+ "cost_scenario": {
+  "spread_price": 0.25,
+  "slippage_fixed_points": 2.0,
+  "commission_per_lot_side": 7.0
+ },
+ "note": "gates are runtime-only patches inside this process; no platform file modified; gates apply to NEW ENTRIES ONLY \u2014 exits/risk/sizing/costs are frozen production behaviour"
+}

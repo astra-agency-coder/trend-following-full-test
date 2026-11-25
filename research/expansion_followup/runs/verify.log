@@ -1,0 +1,17 @@
+loading M15 features for ER compliance checks...
+variants found: ['baseline_repro', 'exp1_expansion_only', 'exp2_pullback_only', 'exp3a_sunday_only', 'exp3b_h23_only', 'exp3c_no_sunday', 'exp3d_no_h23', 'exp3e_sunday_h23', 'exp4a_exp_pullback', 'exp4b_exp_pb_timing']
+[PASS] baseline_repro V1_files_parse: trades=2523 equity_rows=159247 decisions_summary_keys=17
+[PASS] baseline_repro V2_net_identity: net == gross - commission - swap violations=0
+[PASS] baseline_repro V2_unique_ids: unique trade ids=True
+[PASS] baseline_repro V3_r_multiple: r_multiple consistent violations=0
+[PASS] baseline_repro V4_sl_sides: BUY SL<entry=True SELL SL>entry=True
+[PASS] baseline_repro V5_equity_reconcile: sum(net)=-9035.19 equityΔ=-9035.14 |gap|=0.05$ (tol 50$ M15-sampled floating P/L)
+Traceback (most recent call last):
+  File "/home/z/my-project/work/github_tf_test/research/expansion_followup/verify_experiments.py", line 179, in <module>
+    main()
+  File "/home/z/my-project/work/github_tf_test/research/expansion_followup/verify_experiments.py", line 167, in main
+    verify(v, feats)
+  File "/home/z/my-project/work/github_tf_test/research/expansion_followup/verify_experiments.py", line 112, in verify
+    gname = gate["gate"]["name"] if isinstance(gate.get("gate"), dict) else str(gate.get("gate"))
+            ~~~~~~~~~~~~^^^^^^^^
+KeyError: 'name'

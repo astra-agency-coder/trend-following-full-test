@@ -1,0 +1,23 @@
+[2026-11-25T09:07:48.946449+00:00] [baseline_repro] START gate=none smoke=False
+[2026-11-25T09:28:37.088038+00:00] [baseline_repro] DONE wall=1248.1s engine=1219.8s trades=2523 balance=964.86 gate_blocked=0
+[2026-11-25T09:28:39.968593+00:00] [exp1_expansion_only] START gate=expansion_only smoke=False
+[2026-11-25T09:47:40.789870+00:00] [exp1_expansion_only] DONE wall=1140.8s engine=1112.9s trades=2523 balance=964.86 gate_blocked=111602
+[2026-11-25T09:47:43.874733+00:00] [exp2_pullback_only] START gate=pullback_only smoke=False
+[2026-11-25T10:07:47.291229+00:00] [exp2_pullback_only] DONE wall=1203.4s engine=1175.6s trades=2208 balance=1318.19 gate_blocked=0
+[2026-11-25T10:07:50.168742+00:00] [exp3a_sunday_only] START gate=sunday_only smoke=False
+[2026-11-25T11:00:37.190285+00:00] [exp3a_sunday_only] START gate=sunday_only smoke=False
+[2026-11-25T11:15:59.576059+00:00] [exp3a_sunday_only] DONE wall=922.4s engine=893.6s trades=68 balance=9961.65 gate_blocked=157245
+[2026-11-25T11:16:02.418703+00:00] [exp3b_h23_only] START gate=h23_only smoke=False
+[2026-11-25T11:31:19.674801+00:00] [exp3b_h23_only] DONE wall=917.3s engine=888.8s trades=160 balance=8775.93 gate_blocked=152997
+[2026-11-25T11:31:22.532195+00:00] [exp3c_no_sunday] START gate=no_sunday smoke=False
+[2026-11-25T14:32:27.965845+00:00] [exp3c_no_sunday] START gate=no_sunday smoke=False
+[2026-11-25T14:52:49.602781+00:00] [exp3c_no_sunday] DONE wall=1221.6s engine=1193.6s trades=2504 balance=967.68 gate_blocked=2002
+[2026-11-25T14:52:52.434126+00:00] [exp3d_no_h23] START gate=no_h23 smoke=False
+[2026-11-25T15:13:34.899328+00:00] [exp3d_no_h23] DONE wall=1242.5s engine=1214.4s trades=2475 balance=946.6 gate_blocked=6250
+[2026-11-25T15:13:37.695469+00:00] [exp3e_sunday_h23] START gate=sunday_h23 smoke=False
+[2026-11-25T15:28:45.729196+00:00] [exp3e_sunday_h23] DONE wall=908.0s engine=880.4s trades=46 balance=9982.44 gate_blocked=158013
+[2026-11-25T15:28:48.521223+00:00] [exp4a_exp_pullback] START gate=expansion+pullback smoke=False
+[2026-11-25T15:47:50.821287+00:00] [exp4a_exp_pullback] DONE wall=1142.3s engine=1114.3s trades=2208 balance=1318.19 gate_blocked=111602
+[2026-11-25T15:47:53.756376+00:00] [exp4b] best timing filter selected: exp3e_sunday_h23 (net=-17.57)
+[2026-11-25T15:47:53.756639+00:00] [exp4b_exp_pb_timing] START gate=expansion+pullback+sunday_h23 smoke=False
+[2026-11-25T16:03:23.444195+00:00] [exp4b_exp_pb_timing] DONE wall=929.7s engine=901.4s trades=38 balance=9902.85 gate_blocked=158859

@@ -1,0 +1,19 @@
+{
+ "variant_id": "exp1_expansion_only",
+ "gate": {
+  "er_period": 20,
+  "er_threshold": 0.3,
+  "window": "bar_service closed M15 buffer (<=600 bars), no lookahead"
+ },
+ "gate_codes": [
+  "RESEARCH_EXPANSION_ONLY"
+ ],
+ "blocked_evaluations": 111602,
+ "allowed_evaluations": 47645,
+ "cost_scenario": {
+  "spread_price": 0.25,
+  "slippage_fixed_points": 2.0,
+  "commission_per_lot_side": 7.0
+ },
+ "note": "gates are runtime-only patches inside this process; no platform file modified; gates apply to NEW ENTRIES ONLY \u2014 exits/risk/sizing/costs are frozen production behaviour"
+}

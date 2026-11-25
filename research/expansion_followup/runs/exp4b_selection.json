@@ -1,0 +1,32 @@
+{
+ "rule": "max net P/L among exp3 variants (tie-break: max PF)",
+ "candidates": {
+  "exp3a_sunday_only": {
+   "net": -38.35,
+   "pf": 0.9708,
+   "trades": 68
+  },
+  "exp3b_h23_only": {
+   "net": -1224.07,
+   "pf": 0.6366,
+   "trades": 160
+  },
+  "exp3c_no_sunday": {
+   "net": -9032.34,
+   "pf": 0.5653,
+   "trades": 2504
+  },
+  "exp3d_no_h23": {
+   "net": -9053.46,
+   "pf": 0.5599,
+   "trades": 2475
+  },
+  "exp3e_sunday_h23": {
+   "net": -17.57,
+   "pf": 0.9812,
+   "trades": 46
+  }
+ },
+ "selected": "exp3e_sunday_h23",
+ "multiple_testing_note": "selection is post-hoc; exp4b inherits its risk of chance superiority"
+}

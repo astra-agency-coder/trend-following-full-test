@@ -1,0 +1,49 @@
+{
+ "label": "tf_ef_exp4a_exp_pullback",
+ "strategies": [
+  "trend_following"
+ ],
+ "start_utc": "2020-01-01T00:00:00+00:00",
+ "end_utc": "2026-11-13T23:59:00+00:00",
+ "effective_start_utc": "2019-12-22T00:00:00+00:00",
+ "decisions": 159247,
+ "closed_trades": 2208,
+ "final_balance": 1318.19,
+ "final_equity": 1318.19,
+ "initial_balance": 0.0,
+ "stats": {
+  "cycles": 159247,
+  "evaluations": 159247,
+  "candidates": 6572,
+  "selections": 6471,
+  "trades_opened": 2208,
+  "rejections": 4364,
+  "shadow_registered": 101,
+  "data_gap_cycles": 0
+ },
+ "elapsed_seconds": 1114.3,
+ "spread_price_assumption": 0.25,
+ "db_path": "/home/z/my-project/work/github_tf_test/research/expansion_followup/runs/exp4a_exp_pullback/research.db",
+ "gate": {
+  "name": "expansion+pullback",
+  "blocked_evaluations": 111602,
+  "allowed_evaluations": 47645,
+  "params": {
+   "expansion_only": {
+    "er_period": 20,
+    "er_threshold": 0.3,
+    "window": "bar_service closed M15 buffer (<=600 bars), no lookahead"
+   },
+   "pullback_only": {
+    "disabled_setup": "DONCHIAN_BREAKOUT",
+    "method": "module-level donchian_channel neutralized during evaluate()"
+   }
+  }
+ },
+ "cost_scenario": {
+  "spread_price": 0.25,
+  "slippage_fixed_points": 2.0,
+  "commission_per_lot_side": 7.0
+ },
+ "variant_id": "exp4a_exp_pullback"
+}

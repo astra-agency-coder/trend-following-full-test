@@ -1,0 +1,57 @@
+{
+ "label": "tf_ef_exp4b_exp_pb_timing",
+ "strategies": [
+  "trend_following"
+ ],
+ "start_utc": "2020-01-01T00:00:00+00:00",
+ "end_utc": "2026-11-13T23:59:00+00:00",
+ "effective_start_utc": "2019-12-22T00:00:00+00:00",
+ "decisions": 159247,
+ "closed_trades": 38,
+ "final_balance": 9902.85,
+ "final_equity": 9902.85,
+ "initial_balance": 0.0,
+ "stats": {
+  "cycles": 159247,
+  "evaluations": 159247,
+  "candidates": 51,
+  "selections": 51,
+  "trades_opened": 38,
+  "rejections": 13,
+  "shadow_registered": 0,
+  "data_gap_cycles": 0
+ },
+ "elapsed_seconds": 901.4,
+ "spread_price_assumption": 0.25,
+ "db_path": "/home/z/my-project/work/github_tf_test/research/expansion_followup/runs/exp4b_exp_pb_timing/research.db",
+ "gate": {
+  "name": "expansion+pullback+sunday_h23",
+  "blocked_evaluations": 158859,
+  "allowed_evaluations": 388,
+  "params": {
+   "expansion_only": {
+    "er_period": 20,
+    "er_threshold": 0.3,
+    "window": "bar_service closed M15 buffer (<=600 bars), no lookahead"
+   },
+   "pullback_only": {
+    "disabled_setup": "DONCHIAN_BREAKOUT",
+    "method": "module-level donchian_channel neutralized during evaluate()"
+   },
+   "sunday_h23": {
+    "utc_weekdays_allowed": [
+     6
+    ],
+    "utc_hours_allowed": [
+     23
+    ]
+   }
+  }
+ },
+ "cost_scenario": {
+  "spread_price": 0.25,
+  "slippage_fixed_points": 2.0,
+  "commission_per_lot_side": 7.0
+ },
+ "variant_id": "exp4b_exp_pb_timing"
+}

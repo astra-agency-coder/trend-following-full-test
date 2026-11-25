@@ -1,0 +1,42 @@
+{
+ "variant_id": "exp3d_no_h23",
+ "gate": {
+  "utc_weekdays_allowed": "all",
+  "utc_hours_allowed": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22
+  ]
+ },
+ "gate_codes": [
+  "RESEARCH_TIMING_GATE"
+ ],
+ "blocked_evaluations": 6250,
+ "allowed_evaluations": 152997,
+ "cost_scenario": {
+  "spread_price": 0.25,
+  "slippage_fixed_points": 2.0,
+  "commission_per_lot_side": 7.0
+ },
+ "note": "gates are runtime-only patches inside this process; no platform file modified; gates apply to NEW ENTRIES ONLY \u2014 exits/risk/sizing/costs are frozen production behaviour"
+}

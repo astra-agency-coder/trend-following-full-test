@@ -1,0 +1,46 @@
+{
+ "label": "tf_ef_exp3e_sunday_h23",
+ "strategies": [
+  "trend_following"
+ ],
+ "start_utc": "2020-01-01T00:00:00+00:00",
+ "end_utc": "2026-11-13T23:59:00+00:00",
+ "effective_start_utc": "2019-12-22T00:00:00+00:00",
+ "decisions": 159247,
+ "closed_trades": 46,
+ "final_balance": 9982.44,
+ "final_equity": 9982.44,
+ "initial_balance": 0.0,
+ "stats": {
+  "cycles": 159247,
+  "evaluations": 159247,
+  "candidates": 67,
+  "selections": 67,
+  "trades_opened": 46,
+  "rejections": 21,
+  "shadow_registered": 0,
+  "data_gap_cycles": 0
+ },
+ "elapsed_seconds": 880.4,
+ "spread_price_assumption": 0.25,
+ "db_path": "/home/z/my-project/work/github_tf_test/research/expansion_followup/runs/exp3e_sunday_h23/research.db",
+ "gate": {
+  "name": "sunday_h23",
+  "blocked_evaluations": 158013,
+  "allowed_evaluations": 1234,
+  "params": {
+   "utc_weekdays_allowed": [
+    6
+   ],
+   "utc_hours_allowed": [
+    23
+   ]
+  }
+ },
+ "cost_scenario": {
+  "spread_price": 0.25,
+  "slippage_fixed_points": 2.0,
+  "commission_per_lot_side": 7.0
+ },
+ "variant_id": "exp3e_sunday_h23"
+}
