@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/z/my-project/work/github_tf_test/research/expansion_followup/make_charts.py", line 9, in <module>
+    import arabic_reshaper
+ModuleNotFoundError: No module named 'arabic_reshaper'

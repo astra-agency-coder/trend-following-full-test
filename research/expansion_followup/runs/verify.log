@@ -6,12 +6,75 @@ variants found: ['baseline_repro', 'exp1_expansion_only', 'exp2_pullback_only', 
 [PASS] baseline_repro V3_r_multiple: r_multiple consistent violations=0
 [PASS] baseline_repro V4_sl_sides: BUY SL<entry=True SELL SL>entry=True
 [PASS] baseline_repro V5_equity_reconcile: sum(net)=-9035.19 equityΔ=-9035.14 |gap|=0.05$ (tol 50$ M15-sampled floating P/L)
-Traceback (most recent call last):
-  File "/home/z/my-project/work/github_tf_test/research/expansion_followup/verify_experiments.py", line 179, in <module>
-    main()
-  File "/home/z/my-project/work/github_tf_test/research/expansion_followup/verify_experiments.py", line 167, in main
-    verify(v, feats)
-  File "/home/z/my-project/work/github_tf_test/research/expansion_followup/verify_experiments.py", line 112, in verify
-    gname = gate["gate"]["name"] if isinstance(gate.get("gate"), dict) else str(gate.get("gate"))
-            ~~~~~~~~~~~~^^^^^^^^
-KeyError: 'name'
+[FAIL] baseline_repro V6_no_gate: gate=None
+[PASS] baseline_repro V7_row_for_row_repro: 2523 trades compared on 11 fields (ids excluded) — mismatched values=0
+[PASS] exp1_expansion_only V1_files_parse: trades=2523 equity_rows=159247 decisions_summary_keys=17
+[PASS] exp1_expansion_only V2_net_identity: net == gross - commission - swap violations=0
+[PASS] exp1_expansion_only V2_unique_ids: unique trade ids=True
+[PASS] exp1_expansion_only V3_r_multiple: r_multiple consistent violations=0
+[PASS] exp1_expansion_only V4_sl_sides: BUY SL<entry=True SELL SL>entry=True
+[PASS] exp1_expansion_only V5_equity_reconcile: sum(net)=-9035.19 equityΔ=-9035.14 |gap|=0.05$ (tol 50$ M15-sampled floating P/L)
+[exp1_expansion_only] computing ER at 2523 entries...
+[PASS] exp1_expansion_only V6_expansion_compliance: entries with ER20<0.3: 0/2523 (min ER=0.300)
+[PASS] exp2_pullback_only V1_files_parse: trades=2208 equity_rows=159247 decisions_summary_keys=17
+[PASS] exp2_pullback_only V2_net_identity: net == gross - commission - swap violations=0
+[PASS] exp2_pullback_only V2_unique_ids: unique trade ids=True
+[PASS] exp2_pullback_only V3_r_multiple: r_multiple consistent violations=0
+[PASS] exp2_pullback_only V4_sl_sides: BUY SL<entry=True SELL SL>entry=True
+[PASS] exp2_pullback_only V5_equity_reconcile: sum(net)=-8681.73 equityΔ=-8681.81 |gap|=0.08$ (tol 50$ M15-sampled floating P/L)
+[PASS] exp2_pullback_only V6_pullback_only: non-pullback trades=0 setups={'TREND_PULLBACK_CONTINUATION': 2208}
+[PASS] exp3a_sunday_only V1_files_parse: trades=68 equity_rows=159247 decisions_summary_keys=17
+[PASS] exp3a_sunday_only V2_net_identity: net == gross - commission - swap violations=0
+[PASS] exp3a_sunday_only V2_unique_ids: unique trade ids=True
+[PASS] exp3a_sunday_only V3_r_multiple: r_multiple consistent violations=0
+[PASS] exp3a_sunday_only V4_sl_sides: BUY SL<entry=True SELL SL>entry=True
+[PASS] exp3a_sunday_only V5_equity_reconcile: sum(net)=-38.35 equityΔ=-38.35 |gap|=0.00$ (tol 50$ M15-sampled floating P/L)
+[PASS] exp3a_sunday_only V6_sunday_only: non-Sunday entries=0
+[PASS] exp3b_h23_only V1_files_parse: trades=160 equity_rows=159247 decisions_summary_keys=17
+[PASS] exp3b_h23_only V2_net_identity: net == gross - commission - swap violations=0
+[PASS] exp3b_h23_only V2_unique_ids: unique trade ids=True
+[PASS] exp3b_h23_only V3_r_multiple: r_multiple consistent violations=0
+[PASS] exp3b_h23_only V4_sl_sides: BUY SL<entry=True SELL SL>entry=True
+[PASS] exp3b_h23_only V5_equity_reconcile: sum(net)=-1224.07 equityΔ=-1224.07 |gap|=0.00$ (tol 50$ M15-sampled floating P/L)
+[PASS] exp3b_h23_only V6_h23_only: non-23:00 entries=0
+[PASS] exp3c_no_sunday V1_files_parse: trades=2504 equity_rows=159247 decisions_summary_keys=17
+[PASS] exp3c_no_sunday V2_net_identity: net == gross - commission - swap violations=0
+[PASS] exp3c_no_sunday V2_unique_ids: unique trade ids=True
+[PASS] exp3c_no_sunday V3_r_multiple: r_multiple consistent violations=0
+[PASS] exp3c_no_sunday V4_sl_sides: BUY SL<entry=True SELL SL>entry=True
+[PASS] exp3c_no_sunday V5_equity_reconcile: sum(net)=-9032.34 equityΔ=-9032.32 |gap|=0.02$ (tol 50$ M15-sampled floating P/L)
+[PASS] exp3c_no_sunday V6_no_sunday: Sunday entries=0
+[PASS] exp3d_no_h23 V1_files_parse: trades=2475 equity_rows=159247 decisions_summary_keys=17
+[PASS] exp3d_no_h23 V2_net_identity: net == gross - commission - swap violations=0
+[PASS] exp3d_no_h23 V2_unique_ids: unique trade ids=True
+[PASS] exp3d_no_h23 V3_r_multiple: r_multiple consistent violations=0
+[PASS] exp3d_no_h23 V4_sl_sides: BUY SL<entry=True SELL SL>entry=True
+[PASS] exp3d_no_h23 V5_equity_reconcile: sum(net)=-9053.46 equityΔ=-9053.40 |gap|=0.06$ (tol 50$ M15-sampled floating P/L)
+[PASS] exp3d_no_h23 V6_no_h23: 23:00 entries=0
+[PASS] exp3e_sunday_h23 V1_files_parse: trades=46 equity_rows=159247 decisions_summary_keys=17
+[PASS] exp3e_sunday_h23 V2_net_identity: net == gross - commission - swap violations=0
+[PASS] exp3e_sunday_h23 V2_unique_ids: unique trade ids=True
+[PASS] exp3e_sunday_h23 V3_r_multiple: r_multiple consistent violations=0
+[PASS] exp3e_sunday_h23 V4_sl_sides: BUY SL<entry=True SELL SL>entry=True
+[PASS] exp3e_sunday_h23 V5_equity_reconcile: sum(net)=-17.57 equityΔ=-17.56 |gap|=0.01$ (tol 50$ M15-sampled floating P/L)
+[PASS] exp3e_sunday_h23 V6_sunday_h23: violating entries=0 n=46
+[PASS] exp4a_exp_pullback V1_files_parse: trades=2208 equity_rows=159247 decisions_summary_keys=17
+[PASS] exp4a_exp_pullback V2_net_identity: net == gross - commission - swap violations=0
+[PASS] exp4a_exp_pullback V2_unique_ids: unique trade ids=True
+[PASS] exp4a_exp_pullback V3_r_multiple: r_multiple consistent violations=0
+[PASS] exp4a_exp_pullback V4_sl_sides: BUY SL<entry=True SELL SL>entry=True
+[PASS] exp4a_exp_pullback V5_equity_reconcile: sum(net)=-8681.73 equityΔ=-8681.81 |gap|=0.08$ (tol 50$ M15-sampled floating P/L)
+[exp4a_exp_pullback] computing ER at 2208 entries...
+[PASS] exp4a_exp_pullback V6_expansion_compliance: entries with ER20<0.3: 0/2208 (min ER=0.300)
+[PASS] exp4a_exp_pullback V6_pullback_only: non-pullback trades=0 setups={'TREND_PULLBACK_CONTINUATION': 2208}
+[PASS] exp4b_exp_pb_timing V1_files_parse: trades=38 equity_rows=159247 decisions_summary_keys=17
+[PASS] exp4b_exp_pb_timing V2_net_identity: net == gross - commission - swap violations=0
+[PASS] exp4b_exp_pb_timing V2_unique_ids: unique trade ids=True
+[PASS] exp4b_exp_pb_timing V3_r_multiple: r_multiple consistent violations=0
+[PASS] exp4b_exp_pb_timing V4_sl_sides: BUY SL<entry=True SELL SL>entry=True
+[PASS] exp4b_exp_pb_timing V5_equity_reconcile: sum(net)=-97.16 equityΔ=-97.15 |gap|=0.01$ (tol 50$ M15-sampled floating P/L)
+[exp4b_exp_pb_timing] computing ER at 38 entries...
+[PASS] exp4b_exp_pb_timing V6_expansion_compliance: entries with ER20<0.3: 0/38 (min ER=0.307)
+[PASS] exp4b_exp_pb_timing V6_pullback_only: non-pullback trades=0 setups={'TREND_PULLBACK_CONTINUATION': 38}
+
+VERIFICATION FAILED: 73 checks, 1 failures

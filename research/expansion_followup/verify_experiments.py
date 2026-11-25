@@ -109,7 +109,7 @@ def verify(variant: str, feats: pd.DataFrame) -> None:
 
         # V6 gate compliance
         opened = pd.to_datetime(trades.opened_at_utc, utc=True)
-        gname = gate["gate"]["name"] if isinstance(gate.get("gate"), dict) else str(gate.get("gate"))
+        gname = gate.get("name") or (gate["gate"].get("name") if isinstance(gate.get("gate"), dict) else "?")
         if variant in ("exp1_expansion_only", "exp4a_exp_pullback", "exp4b_exp_pb_timing"):
             print(f"[{variant}] computing ER at {len(trades)} entries...", flush=True)
             ers = [er_at(feats, t) for t in opened]

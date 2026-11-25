@@ -1,0 +1,445 @@
+{
+ "generated_at_utc": "2026-11-25T16:08:31.534502+00:00",
+ "all_passed": false,
+ "failed_checks": 1,
+ "checks": [
+  {
+   "variant": "baseline_repro",
+   "check": "V1_files_parse",
+   "pass": true,
+   "detail": "trades=2523 equity_rows=159247 decisions_summary_keys=17"
+  },
+  {
+   "variant": "baseline_repro",
+   "check": "V2_net_identity",
+   "pass": true,
+   "detail": "net == gross - commission - swap violations=0"
+  },
+  {
+   "variant": "baseline_repro",
+   "check": "V2_unique_ids",
+   "pass": true,
+   "detail": "unique trade ids=True"
+  },
+  {
+   "variant": "baseline_repro",
+   "check": "V3_r_multiple",
+   "pass": true,
+   "detail": "r_multiple consistent violations=0"
+  },
+  {
+   "variant": "baseline_repro",
+   "check": "V4_sl_sides",
+   "pass": true,
+   "detail": "BUY SL<entry=True SELL SL>entry=True"
+  },
+  {
+   "variant": "baseline_repro",
+   "check": "V5_equity_reconcile",
+   "pass": true,
+   "detail": "sum(net)=-9035.19 equity\u0394=-9035.14 |gap|=0.05$ (tol 50$ M15-sampled floating P/L)"
+  },
+  {
+   "variant": "baseline_repro",
+   "check": "V6_no_gate",
+   "pass": false,
+   "detail": "gate=None"
+  },
+  {
+   "variant": "baseline_repro",
+   "check": "V7_row_for_row_repro",
+   "pass": true,
+   "detail": "2523 trades compared on 11 fields (ids excluded) \u2014 mismatched values=0"
+  },
+  {
+   "variant": "exp1_expansion_only",
+   "check": "V1_files_parse",
+   "pass": true,
+   "detail": "trades=2523 equity_rows=159247 decisions_summary_keys=17"
+  },
+  {
+   "variant": "exp1_expansion_only",
+   "check": "V2_net_identity",
+   "pass": true,
+   "detail": "net == gross - commission - swap violations=0"
+  },
+  {
+   "variant": "exp1_expansion_only",
+   "check": "V2_unique_ids",
+   "pass": true,
+   "detail": "unique trade ids=True"
+  },
+  {
+   "variant": "exp1_expansion_only",
+   "check": "V3_r_multiple",
+   "pass": true,
+   "detail": "r_multiple consistent violations=0"
+  },
+  {
+   "variant": "exp1_expansion_only",
+   "check": "V4_sl_sides",
+   "pass": true,
+   "detail": "BUY SL<entry=True SELL SL>entry=True"
+  },
+  {
+   "variant": "exp1_expansion_only",
+   "check": "V5_equity_reconcile",
+   "pass": true,
+   "detail": "sum(net)=-9035.19 equity\u0394=-9035.14 |gap|=0.05$ (tol 50$ M15-sampled floating P/L)"
+  },
+  {
+   "variant": "exp1_expansion_only",
+   "check": "V6_expansion_compliance",
+   "pass": true,
+   "detail": "entries with ER20<0.3: 0/2523 (min ER=0.300)"
+  },
+  {
+   "variant": "exp2_pullback_only",
+   "check": "V1_files_parse",
+   "pass": true,
+   "detail": "trades=2208 equity_rows=159247 decisions_summary_keys=17"
+  },
+  {
+   "variant": "exp2_pullback_only",
+   "check": "V2_net_identity",
+   "pass": true,
+   "detail": "net == gross - commission - swap violations=0"
+  },
+  {
+   "variant": "exp2_pullback_only",
+   "check": "V2_unique_ids",
+   "pass": true,
+   "detail": "unique trade ids=True"
+  },
+  {
+   "variant": "exp2_pullback_only",
+   "check": "V3_r_multiple",
+   "pass": true,
+   "detail": "r_multiple consistent violations=0"
+  },
+  {
+   "variant": "exp2_pullback_only",
+   "check": "V4_sl_sides",
+   "pass": true,
+   "detail": "BUY SL<entry=True SELL SL>entry=True"
+  },
+  {
+   "variant": "exp2_pullback_only",
+   "check": "V5_equity_reconcile",
+   "pass": true,
+   "detail": "sum(net)=-8681.73 equity\u0394=-8681.81 |gap|=0.08$ (tol 50$ M15-sampled floating P/L)"
+  },
+  {
+   "variant": "exp2_pullback_only",
+   "check": "V6_pullback_only",
+   "pass": true,
+   "detail": "non-pullback trades=0 setups={'TREND_PULLBACK_CONTINUATION': 2208}"
+  },
+  {
+   "variant": "exp3a_sunday_only",
+   "check": "V1_files_parse",
+   "pass": true,
+   "detail": "trades=68 equity_rows=159247 decisions_summary_keys=17"
+  },
+  {
+   "variant": "exp3a_sunday_only",
+   "check": "V2_net_identity",
+   "pass": true,
+   "detail": "net == gross - commission - swap violations=0"
+  },
+  {
+   "variant": "exp3a_sunday_only",
+   "check": "V2_unique_ids",
+   "pass": true,
+   "detail": "unique trade ids=True"
+  },
+  {
+   "variant": "exp3a_sunday_only",
+   "check": "V3_r_multiple",
+   "pass": true,
+   "detail": "r_multiple consistent violations=0"
+  },
+  {
+   "variant": "exp3a_sunday_only",
+   "check": "V4_sl_sides",
+   "pass": true,
+   "detail": "BUY SL<entry=True SELL SL>entry=True"
+  },
+  {
+   "variant": "exp3a_sunday_only",
+   "check": "V5_equity_reconcile",
+   "pass": true,
+   "detail": "sum(net)=-38.35 equity\u0394=-38.35 |gap|=0.00$ (tol 50$ M15-sampled floating P/L)"
+  },
+  {
+   "variant": "exp3a_sunday_only",
+   "check": "V6_sunday_only",
+   "pass": true,
+   "detail": "non-Sunday entries=0"
+  },
+  {
+   "variant": "exp3b_h23_only",
+   "check": "V1_files_parse",
+   "pass": true,
+   "detail": "trades=160 equity_rows=159247 decisions_summary_keys=17"
+  },
+  {
+   "variant": "exp3b_h23_only",
+   "check": "V2_net_identity",
+   "pass": true,
+   "detail": "net == gross - commission - swap violations=0"
+  },
+  {
+   "variant": "exp3b_h23_only",
+   "check": "V2_unique_ids",
+   "pass": true,
+   "detail": "unique trade ids=True"
+  },
+  {
+   "variant": "exp3b_h23_only",
+   "check": "V3_r_multiple",
+   "pass": true,
+   "detail": "r_multiple consistent violations=0"
+  },
+  {
+   "variant": "exp3b_h23_only",
+   "check": "V4_sl_sides",
+   "pass": true,
+   "detail": "BUY SL<entry=True SELL SL>entry=True"
+  },
+  {
+   "variant": "exp3b_h23_only",
+   "check": "V5_equity_reconcile",
+   "pass": true,
+   "detail": "sum(net)=-1224.07 equity\u0394=-1224.07 |gap|=0.00$ (tol 50$ M15-sampled floating P/L)"
+  },
+  {
+   "variant": "exp3b_h23_only",
+   "check": "V6_h23_only",
+   "pass": true,
+   "detail": "non-23:00 entries=0"
+  },
+  {
+   "variant": "exp3c_no_sunday",
+   "check": "V1_files_parse",
+   "pass": true,
+   "detail": "trades=2504 equity_rows=159247 decisions_summary_keys=17"
+  },
+  {
+   "variant": "exp3c_no_sunday",
+   "check": "V2_net_identity",
+   "pass": true,
+   "detail": "net == gross - commission - swap violations=0"
+  },
+  {
+   "variant": "exp3c_no_sunday",
+   "check": "V2_unique_ids",
+   "pass": true,
+   "detail": "unique trade ids=True"
+  },
+  {
+   "variant": "exp3c_no_sunday",
+   "check": "V3_r_multiple",
+   "pass": true,
+   "detail": "r_multiple consistent violations=0"
+  },
+  {
+   "variant": "exp3c_no_sunday",
+   "check": "V4_sl_sides",
+   "pass": true,
+   "detail": "BUY SL<entry=True SELL SL>entry=True"
+  },
+  {
+   "variant": "exp3c_no_sunday",
+   "check": "V5_equity_reconcile",
+   "pass": true,
+   "detail": "sum(net)=-9032.34 equity\u0394=-9032.32 |gap|=0.02$ (tol 50$ M15-sampled floating P/L)"
+  },
+  {
+   "variant": "exp3c_no_sunday",
+   "check": "V6_no_sunday",
+   "pass": true,
+   "detail": "Sunday entries=0"
+  },
+  {
+   "variant": "exp3d_no_h23",
+   "check": "V1_files_parse",
+   "pass": true,
+   "detail": "trades=2475 equity_rows=159247 decisions_summary_keys=17"
+  },
+  {
+   "variant": "exp3d_no_h23",
+   "check": "V2_net_identity",
+   "pass": true,
+   "detail": "net == gross - commission - swap violations=0"
+  },
+  {
+   "variant": "exp3d_no_h23",
+   "check": "V2_unique_ids",
+   "pass": true,
+   "detail": "unique trade ids=True"
+  },
+  {
+   "variant": "exp3d_no_h23",
+   "check": "V3_r_multiple",
+   "pass": true,
+   "detail": "r_multiple consistent violations=0"
+  },
+  {
+   "variant": "exp3d_no_h23",
+   "check": "V4_sl_sides",
+   "pass": true,
+   "detail": "BUY SL<entry=True SELL SL>entry=True"
+  },
+  {
+   "variant": "exp3d_no_h23",
+   "check": "V5_equity_reconcile",
+   "pass": true,
+   "detail": "sum(net)=-9053.46 equity\u0394=-9053.40 |gap|=0.06$ (tol 50$ M15-sampled floating P/L)"
+  },
+  {
+   "variant": "exp3d_no_h23",
+   "check": "V6_no_h23",
+   "pass": true,
+   "detail": "23:00 entries=0"
+  },
+  {
+   "variant": "exp3e_sunday_h23",
+   "check": "V1_files_parse",
+   "pass": true,
+   "detail": "trades=46 equity_rows=159247 decisions_summary_keys=17"
+  },
+  {
+   "variant": "exp3e_sunday_h23",
+   "check": "V2_net_identity",
+   "pass": true,
+   "detail": "net == gross - commission - swap violations=0"
+  },
+  {
+   "variant": "exp3e_sunday_h23",
+   "check": "V2_unique_ids",
+   "pass": true,
+   "detail": "unique trade ids=True"
+  },
+  {
+   "variant": "exp3e_sunday_h23",
+   "check": "V3_r_multiple",
+   "pass": true,
+   "detail": "r_multiple consistent violations=0"
+  },
+  {
+   "variant": "exp3e_sunday_h23",
+   "check": "V4_sl_sides",
+   "pass": true,
+   "detail": "BUY SL<entry=True SELL SL>entry=True"
+  },
+  {
+   "variant": "exp3e_sunday_h23",
+   "check": "V5_equity_reconcile",
+   "pass": true,
+   "detail": "sum(net)=-17.57 equity\u0394=-17.56 |gap|=0.01$ (tol 50$ M15-sampled floating P/L)"
+  },
+  {
+   "variant": "exp3e_sunday_h23",
+   "check": "V6_sunday_h23",
+   "pass": true,
+   "detail": "violating entries=0 n=46"
+  },
+  {
+   "variant": "exp4a_exp_pullback",
+   "check": "V1_files_parse",
+   "pass": true,
+   "detail": "trades=2208 equity_rows=159247 decisions_summary_keys=17"
+  },
+  {
+   "variant": "exp4a_exp_pullback",
+   "check": "V2_net_identity",
+   "pass": true,
+   "detail": "net == gross - commission - swap violations=0"
+  },
+  {
+   "variant": "exp4a_exp_pullback",
+   "check": "V2_unique_ids",
+   "pass": true,
+   "detail": "unique trade ids=True"
+  },
+  {
+   "variant": "exp4a_exp_pullback",
+   "check": "V3_r_multiple",
+   "pass": true,
+   "detail": "r_multiple consistent violations=0"
+  },
+  {
+   "variant": "exp4a_exp_pullback",
+   "check": "V4_sl_sides",
+   "pass": true,
+   "detail": "BUY SL<entry=True SELL SL>entry=True"
+  },
+  {
+   "variant": "exp4a_exp_pullback",
+   "check": "V5_equity_reconcile",
+   "pass": true,
+   "detail": "sum(net)=-8681.73 equity\u0394=-8681.81 |gap|=0.08$ (tol 50$ M15-sampled floating P/L)"
+  },
+  {
+   "variant": "exp4a_exp_pullback",
+   "check": "V6_expansion_compliance",
+   "pass": true,
+   "detail": "entries with ER20<0.3: 0/2208 (min ER=0.300)"
+  },
+  {
+   "variant": "exp4a_exp_pullback",
+   "check": "V6_pullback_only",
+   "pass": true,
+   "detail": "non-pullback trades=0 setups={'TREND_PULLBACK_CONTINUATION': 2208}"
+  },
+  {
+   "variant": "exp4b_exp_pb_timing",
+   "check": "V1_files_parse",
+   "pass": true,
+   "detail": "trades=38 equity_rows=159247 decisions_summary_keys=17"
+  },
+  {
+   "variant": "exp4b_exp_pb_timing",
+   "check": "V2_net_identity",
+   "pass": true,
+   "detail": "net == gross - commission - swap violations=0"
+  },
+  {
+   "variant": "exp4b_exp_pb_timing",
+   "check": "V2_unique_ids",
+   "pass": true,
+   "detail": "unique trade ids=True"
+  },
+  {
+   "variant": "exp4b_exp_pb_timing",
+   "check": "V3_r_multiple",
+   "pass": true,
+   "detail": "r_multiple consistent violations=0"
+  },
+  {
+   "variant": "exp4b_exp_pb_timing",
+   "check": "V4_sl_sides",
+   "pass": true,
+   "detail": "BUY SL<entry=True SELL SL>entry=True"
+  },
+  {
+   "variant": "exp4b_exp_pb_timing",
+   "check": "V5_equity_reconcile",
+   "pass": true,
+   "detail": "sum(net)=-97.16 equity\u0394=-97.15 |gap|=0.01$ (tol 50$ M15-sampled floating P/L)"
+  },
+  {
+   "variant": "exp4b_exp_pb_timing",
+   "check": "V6_expansion_compliance",
+   "pass": true,
+   "detail": "entries with ER20<0.3: 0/38 (min ER=0.307)"
+  },
+  {
+   "variant": "exp4b_exp_pb_timing",
+   "check": "V6_pullback_only",
+   "pass": true,
+   "detail": "non-pullback trades=0 setups={'TREND_PULLBACK_CONTINUATION': 38}"
+  }
+ ]
+}
